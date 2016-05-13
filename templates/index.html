@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            div.comment{
+                padding: 5px;
+                width: 50%;
+                border: solid deeppink 4px;
+                border-radius: 4px;
+            }
+
+            p.comment{
+                font-style: italic;
+                font-size: 40px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h2> Here is a cool picture. </h2>
+        <img src="/static/wine-unicorn.png">
+        <h3> Comments:</h3>
+        
+        <div id="comment-list">
+            <div class="comment">
+            <h4>Meggie says:</h4>
+                <p class="comment">Blarg, that's really amazing.</p>
+            </div>
+        </div>
+
+        <label>
+            Your Comment:<textarea id="new-comment"></textarea>
+        </label>
+        </div>
+
+        <button id="add-comment">Add a comment</button>
+        <script src="/static/js/updateProfile.js"></script>
+    </body>
+</html>
